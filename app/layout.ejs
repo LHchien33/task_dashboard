@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet">
+    <!-- css style -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <div class="d-flex">
+      <nav class="nav flex-column justify-content-between sideMenu bg-light position-fixed min-vh-100 bg-light py-8">
+        <div>
+          <h2 class="mb-5">
+            <a class="d-block ps-8" href="./index.html">
+              <img src="./assets/images/logo-ANSWER.svg" alt="logo圖示">
+            </a>
+          </h2>
+          <ul class="list-unstyled">
+            <li>
+              <a class="btn btn-link py-3 ps-8 w-100 d-flex align-center fw-bold sideMenu-link" href="#">
+                <span class="material-icons me-4">assessment</span>Dashboard
+              </a>
+            </li>
+            <li>
+              <a class="btn btn-link py-3 ps-8 w-100 d-flex align-center fw-bold sideMenu-link" href="#">
+                <span class="material-icons me-4">question_answer</span>Question
+              </a>
+            </li>
+            <li>
+              <a class="btn btn-link py-3 ps-8 w-100 d-flex align-center fw-bold sideMenu-link" href="./index.html">
+                <span class="material-icons me-4">assignment</span>Assignment
+              </a>
+            </li>
+            <li>
+              <a class="btn btn-link py-3 ps-8 w-100 d-flex align-center fw-bold sideMenu-link" href="#">
+                <span class="material-icons me-4">video_library</span>Course
+              </a>
+            </li>
+            <li>
+              <a class="btn btn-link py-3 ps-8 w-100 d-flex align-center fw-bold sideMenu-link" href="./admin.html">
+                <span class="material-icons me-4">supervisor_account</span>Admin
+              </a>
+            </li>
+            <li>
+              <a class="btn btn-link py-3 ps-8 w-100 d-flex align-center fw-bold sideMenu-link" href="#">
+                <span class="material-icons me-4">settings</span>Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="ps-8">
+          <div class="avatar Andy d-inline-block me-3"></div>
+          <div class="d-inline-block">
+            <p class="fw-bold mb-1">Andy Chen</p>
+            <p class="fs-2 text-gray-600 m-0">andy0401@mail.com</p>
+          </div>
+        </div>
+      </nav>
+
+      <%- contents %>
+
+    </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
+    <script>
+      ClassicEditor
+          .create( document.querySelector( '#editor' ) )
+          .catch( error => {
+              console.error( error );
+          } );
+    </script>
+    <script src="./assets/js/all.js"></script> 
+  </body>
+
+</html>
