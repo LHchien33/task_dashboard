@@ -24,10 +24,12 @@
 }
 
 .main{
-  position: absolute;
-  top: 0;
-  left: 296px;
-  right: 0;
-  max-width: calc(100% - 296px);
+  // position: absolute;
+  // top: 0;
+  // left: 296px;
+  // right: 0;
+  // max-width: calc(100% - 296px);
+  margin-left: 296px;
+  width: 100%;
 }
 

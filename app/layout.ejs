@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <!-- font style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +37,7 @@
               </a>
             </li>
             <li>
-              <a class="btn btn-link py-3 ps-8 w-100 d-flex align-center fw-bold sideMenu-link" href="./index.html">
+              <a class="btn btn-link py-3 ps-8 w-100 d-flex align-center fw-bold sideMenu-link <%= current === 'index' ? 'sideMenu-link-active' : '' %>" href="./index.html">
                 <span class="material-icons me-4">assignment</span>Assignment
               </a>
             </li>
@@ -48,7 +47,7 @@
               </a>
             </li>
             <li>
-              <a class="btn btn-link py-3 ps-8 w-100 d-flex align-center fw-bold sideMenu-link" href="./admin.html">
+              <a class="btn btn-link py-3 ps-8 w-100 d-flex align-center fw-bold sideMenu-link <%= current === 'admin' ? 'sideMenu-link-active' : '' %>" href="./admin.html">
                 <span class="material-icons me-4">supervisor_account</span>Admin
               </a>
             </li>
@@ -74,14 +73,8 @@
 
     <script src="./assets/js/vendors.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
-    <script>
-      ClassicEditor
-          .create( document.querySelector( '#editor' ) )
-          .catch( error => {
-              console.error( error );
-          } );
-    </script>
     <script src="./assets/js/all.js"></script> 
   </body>
 
 </html>
+
