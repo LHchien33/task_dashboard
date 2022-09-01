@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Admin - Answer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <!-- font style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +37,7 @@
               </a>
             </li>
             <li>
-              <a class="btn btn-link py-3 ps-8 w-100 d-flex align-center fw-bold sideMenu-link" href="./index.html">
+              <a class="btn btn-link py-3 ps-8 w-100 d-flex align-center fw-bold sideMenu-link " href="./index.html">
                 <span class="material-icons me-4">assignment</span>Assignment
               </a>
             </li>
@@ -48,7 +47,7 @@
               </a>
             </li>
             <li>
-              <a class="btn btn-link py-3 ps-8 w-100 d-flex align-center fw-bold sideMenu-link" href="./admin.html">
+              <a class="btn btn-link py-3 ps-8 w-100 d-flex align-center fw-bold sideMenu-link sideMenu-link-active" href="./admin.html">
                 <span class="material-icons me-4">supervisor_account</span>Admin
               </a>
             </li>
@@ -119,24 +118,24 @@
                         <h4 class="fs-4 fw-bold m-0 pb-4 pt-6 border-top border-gray-400">Custom Access</h4>
                         <div class="mb-4 ps-1">
                           <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="Lecture" id="Lecture">
-                            <label class="form-check-label ms-1" for="Lecture">Lecture</label>
+                            <input class="form-check-input" type="checkbox" value="Lecture" id="new-Lecture">
+                            <label class="form-check-label ms-1" for="new-Lecture">Lecture</label>
                           </div>
                           <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="Coupon" id="Coupon">
-                            <label class="form-check-label ms-1" for="Coupon">Coupon</label>
+                            <input class="form-check-input" type="checkbox" value="Coupon" id="new-Coupon">
+                            <label class="form-check-label ms-1" for="new-Coupon">Coupon</label>
                           </div>
                           <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="Message" id="Message">
-                            <label class="form-check-label ms-1" for="Message">Message</label>
+                            <input class="form-check-input" type="checkbox" value="Message" id="new-Message">
+                            <label class="form-check-label ms-1" for="new-Message">Message</label>
                           </div>
                           <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="Setting" id="Setting">
-                            <label class="form-check-label ms-1" for="Setting">Setting</label>
+                            <input class="form-check-input" type="checkbox" value="Setting" id="new-Setting">
+                            <label class="form-check-label ms-1" for="new-Setting">Setting</label>
                           </div>
                           <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="Task Menu" id="Task Menu">
-                            <label class="form-check-label ms-1" for="Task Menu">Task Menu</label>
+                            <input class="form-check-input" type="checkbox" value="new-TaskMenu" id="Task Menu">
+                            <label class="form-check-label ms-1" for="new-TaskMenu">Task Menu</label>
                           </div>
                         </div>
                       </div>
@@ -311,7 +310,7 @@
           
           <div class="collapse text-end pt-8" id="view-collapse">
             <button class="btn btn-outline-danger fw-bold py-1 px-8 m-0 me-4" data-bs-dismiss="modal">Deactivate</button>
-            <button class="btn btn-success fw-bold py-1 px-8 m-0" data-bs-dismiss="modal">Edit</button>
+            <button class="btn btn-success fw-bold py-1 px-8 m-0" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#edit-modal">Edit</button>
           </div>
         </div>
       </div>
@@ -322,7 +321,7 @@
       <div class="modal-dialog modal-dialog-scrollable">
         <form class="modal-content">
           <div class="modal-header p-8 border-0">
-            <h3 class="modal-title fw-bold fs-5" id="exampleModalLabel">New Admin</h3>
+            <h3 class="modal-title fw-bold fs-5" id="exampleModalLabel">Edit Admin</h3>
             <button type="button" class="btn-close me-0" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body py-0 px-8">
@@ -358,24 +357,24 @@
               <h4 class="fs-4 fw-bold m-0 pb-4 pt-6 border-top border-gray-400">Custom Access</h4>
               <div class="mb-4 ps-1">
                 <div class="form-check mb-4">
-                  <input class="form-check-input" type="checkbox" value="Lecture" id="Lecture">
-                  <label class="form-check-label ms-1" for="Lecture">Lecture</label>
+                  <input class="form-check-input" type="checkbox" value="Lecture" id="edit-Lecture">
+                  <label class="form-check-label ms-1" for="edit-Lecture">Lecture</label>
                 </div>
                 <div class="form-check mb-4">
-                  <input class="form-check-input" type="checkbox" value="Coupon" id="Coupon">
-                  <label class="form-check-label ms-1" for="Coupon">Coupon</label>
+                  <input class="form-check-input" type="checkbox" value="Coupon" id="edit-Coupon">
+                  <label class="form-check-label ms-1" for="edit-Coupon">Coupon</label>
                 </div>
                 <div class="form-check mb-4">
-                  <input class="form-check-input" type="checkbox" value="Message" id="Message">
-                  <label class="form-check-label ms-1" for="Message">Message</label>
+                  <input class="form-check-input" type="checkbox" value="Message" id="edit-Message">
+                  <label class="form-check-label ms-1" for="edit-Message">Message</label>
                 </div>
                 <div class="form-check mb-4">
-                  <input class="form-check-input" type="checkbox" value="Setting" id="Setting">
-                  <label class="form-check-label ms-1" for="Setting">Setting</label>
+                  <input class="form-check-input" type="checkbox" value="Setting" id="edit-Setting">
+                  <label class="form-check-label ms-1" for="edit-Setting">Setting</label>
                 </div>
                 <div class="form-check mb-4">
-                  <input class="form-check-input" type="checkbox" value="Task Menu" id="Task Menu">
-                  <label class="form-check-label ms-1" for="Task Menu">Task Menu</label>
+                  <input class="form-check-input" type="checkbox" value="Task Menu" id="edit-TaskMenu">
+                  <label class="form-check-label ms-1" for="edit-TaskMenu">Task Menu</label>
                 </div>
               </div>
             </div>
@@ -412,14 +411,8 @@
 
     <script src="./assets/js/vendors.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
-    <script>
-      ClassicEditor
-          .create( document.querySelector( '#editor' ) )
-          .catch( error => {
-              console.error( error );
-          } );
-    </script>
     <script src="./assets/js/all.js"></script> 
   </body>
 
 </html>
+

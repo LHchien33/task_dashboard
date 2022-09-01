@@ -15,4 +15,7 @@ $(document).ready(function () {
     $(this).addClass('sideMenu-link-active').parent().siblings().children('.sideMenu-link').removeClass('sideMenu-link-active');
   });
 });
+ClassicEditor.create(document.querySelector('#editor'))["catch"](function (error) {
+  console.error(error);
+});
 //# sourceMappingURL=all.js.map
